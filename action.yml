@@ -15,7 +15,6 @@ on:
         value: ${{ steps.dado1.outputs.dado2 }}
 jobs:
   tirada:
-    runs-on: ubuntu-latest
     steps:
       - name: ¿Cuántos dados?
         run: echo "Hay ${{inputs.numero-dados}} dados"
